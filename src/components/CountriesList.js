@@ -11,7 +11,9 @@ function CountriesList(props) {
                 <ul style={{listStyle: 'none', textAlign: 'left'}}>
                     {countries.map(each => {
                          return (<li key={each.cca3}>
-                                     <Link to ={`./countries/${each.cca3}`} >{each.name.official}</Link>
+                                     <Link to={`/${each.cca3}`} className="list-group-item list-group-item-action">
+                                        {each.name.official}
+                                     </Link>
                                 </li>)})}
                 </ul>
                 

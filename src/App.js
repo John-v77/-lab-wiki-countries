@@ -10,7 +10,7 @@ function App() {
         <Navbar/>
         <CountriesList/>
         <Switch>
-          <Route exact path='/countries/:id' render={(props) => <CountryDetails {...props} /> } />
+          <Route exact path='/:id' render={(props) => <CountryDetails {...props} /> } />
         </Switch>
     </div>
   );

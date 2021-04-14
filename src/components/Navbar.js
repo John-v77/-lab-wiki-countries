@@ -22,33 +22,11 @@ function Navbar(props) {
 
     return (
         
-    //     <nav class="navbar navbar-dark bg-primary mb-3">
-    //     <div class="container">
-    //       <a class="navbar-brand" href="/">WikiCountries</a>
-    //     </div>
-    //   </nav>
-
-        <nav>
-        
-        <div>
-            <h1>Wiki Countries</h1>
+    <nav className="navbar navbar-dark bg-primary mb-5">
+        <div className="container">
+           <h4 className="text-white">Wiki Countries</h4>
         </div>
-        
-        {/* <div style={style1}>
-            <Link to="/">Home</Link>
-            <Link to="/">About</Link>
-            <Link to="/">Contact</Link>
-        </div> */}
-
-        {/* <div>
-            <Switch>
-                <Route exact path="/" render={(props) => <Home {...props}/>}/>
-                <Route exact path="/about" render={(props) => <About {...props}/>}/>
-                <Route exact path="/contact" render={(props) => <Contact {...props}/>}/>
-            </Switch>
-        </div> */}
-        
-        </nav>
+    </nav>
     );
 }
 
