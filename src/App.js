@@ -8,10 +8,18 @@ function App() {
   return (
     <div className="App">
         <Navbar/>
-        <CountriesList/>
-        <Switch>
-          <Route exact path='/:id' render={(props) => <CountryDetails {...props} /> } />
-        </Switch>
+
+                                {/* Bootstrap container wrapper div */}
+      <div class="container">
+                                    {/* Bootstrap row wrapper div */}
+        <div class="row">
+          <CountriesList/>
+          <Switch>
+            <Route exact path='/:id' render={(props) => <CountryDetails {...props} /> } />
+          </Switch>
+        </div>
+      </div>
+       
     </div>
   );
 }

@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import countries from '../countries.json';
 import {Link} from 'react-router-dom';
 
@@ -30,27 +30,33 @@ function CountryDetails(props) {
               <thead></thead>
               <tbody>
                 <tr>
-                  <td style="width: 30%">
+                  <td style={{width: '30vh'}}>
                     Capital
                   </td>
-                  <td>: 
+                  <td>
                     {country.capital}
                   </td>
                 </tr>
                 <tr>
                     <td>
-
+                        Area
                     </td>
                     <td>
-                        
+                        {country.area}km <sup>2</sup>
                     </td>
                 </tr>
-           
-            <p>Area:   {country.area}</p>
-            <p>Borders:</p>
-            <ul style={{listStyle: 'none', textAlign: 'left'}}>
-                {countryBorders}
-            </ul>
+                <tr>
+                    <td>
+                        Borders
+                    </td>
+                    <td>
+                        <ul style={{textAlign: 'left'}}>
+                            {countryBorders}
+                        </ul>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
         </div>
     );
 }
